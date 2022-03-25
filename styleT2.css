@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+
+:root {
+  --bg-names: #e7e9fe;
+  --bg-contactinfo: #dce1ff;
+  --bg-address: #c7cdfd;
+  --bg-message: #a5b1fd;
+  --bg-main: #cbdffa;
+  --bg-button: #233bf5;
+  --bg-form: #ffffff;
+  --clr-fieldtext: #1838e4;
+  --clr-thnks: #61d7b5;
+  --clr-buttontext: #ffffff;
+
+  --ff-all: "Source Sans Pro", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+html {
+  margin: 0;
+}
+
+body {
+  max-width: ;
+
+  font-family: var(--ff-all);
+  font-size: 62.5%;
+}
+
+.form_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 6rem 6rem 6rem 12rem;
+  gap: 2rem;
+  margin: 8rem 10rem 8rem 10rem;
+  padding: 10rem 7rem 14rem 7rem;
+  background-color: var(--bg-form);
+
+  width: 76.4rem;
+  height: 56.9rem;
+}
+
+.get {
+  position: relative;
+  top: 14.5rem;
+  left: 16.7rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--clr-fieldtext);
+}
+
+.f_name,
+.l_name,
+.email,
+.phone,
+.address,
+.message {
+  padding: 1rem;
+  color: var(--clr-fieldtext);
+  font-weight: 900;
+  border-radius: 1rem;
+}
+
+.f_name,
+.l_name {
+  background-color: var(--bg-names);
+}
+
+.email,
+.phone {
+  background-color: var(--bg-contactinfo);
+}
+
+.address {
+  background-color: var(--bg-address);
+}
+
+.message {
+  background-color: var(--bg-message);
+}
+
+.container_bg {
+  background-color: var(--bg-main);
+  width: 92.4rem;
+  height: 72.9rem;
+}
+
+.form_container div {
+  font-size: 1.4rem;
+}
