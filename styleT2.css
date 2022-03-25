@@ -19,7 +19,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 html {
   margin: 0;
@@ -94,4 +93,12 @@ h1 {
 
 .form_container div {
   font-size: 1.4rem;
+}
+
+button {
+  background-color: var(--bg-button);
+  color: var(--clr-buttontext);
+  border-radius: 1rem;
+  width: 7rem;
+  height: 2rem;
 }
