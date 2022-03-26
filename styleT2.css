@@ -19,25 +19,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--ff-all);
+  font-size: 62.5%;
 }
 html {
   margin: 0;
 }
 
 body {
-  max-width: ;
-
-  font-family: var(--ff-all);
-  font-size: 62.5%;
+  max-width: 100%;
+  background-color: var(--bg-main);
+  justify-content: center;
+  align-items: center;
 }
 
 .form_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 6rem 6rem 6rem 12rem;
+  grid-template-rows: 4rem 4rem 4rem 4rem 8rem;
   gap: 2rem;
-  margin: 8rem 10rem 10rem 10rem;
-  padding: 10rem 7rem 20rem 7rem;
+  margin: 8rem 10rem 15rem 10rem;
+  padding: 5rem 7rem 20rem 10rem;
   background-color: var(--bg-form);
 
   width: 76.4rem;
@@ -45,9 +47,7 @@ body {
 }
 
 .get {
-  position: relative;
-  top: 14.5rem;
-  left: 16.7rem;
+  grid-column: 1/3;
 }
 
 h1 {
@@ -100,6 +100,8 @@ h1 {
 button {
   background-color: var(--bg-button);
   color: var(--clr-buttontext);
+  font-size: 2rem;
+  font-weight: 900;
   border-radius: 2rem;
   width: 10rem;
   height: 3rem;
@@ -114,4 +116,7 @@ button {
   text-align: left;
   font-weight: 600;
   color: var(--clr-thnks);
+}
+.thanks p {
+  font-size: 2rem;
 }
