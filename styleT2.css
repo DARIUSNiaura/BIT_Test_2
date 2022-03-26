@@ -36,8 +36,8 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 6rem 6rem 6rem 12rem;
   gap: 2rem;
-  margin: 8rem 10rem 8rem 10rem;
-  padding: 10rem 7rem 14rem 7rem;
+  margin: 8rem 10rem 10rem 10rem;
+  padding: 10rem 7rem 20rem 7rem;
   background-color: var(--bg-form);
 
   width: 76.4rem;
@@ -79,10 +79,12 @@ h1 {
 
 .address {
   background-color: var(--bg-address);
+  grid-column: 1/3;
 }
 
 .message {
   background-color: var(--bg-message);
+  grid-column: 1/3;
 }
 
 .container_bg {
@@ -98,7 +100,18 @@ h1 {
 button {
   background-color: var(--bg-button);
   color: var(--clr-buttontext);
-  border-radius: 1rem;
-  width: 7rem;
-  height: 2rem;
+  border-radius: 2rem;
+  width: 10rem;
+  height: 3rem;
+  border: none;
+}
+.button {
+  text-align: center;
+  grid-column: 1/3;
+}
+
+.thanks {
+  text-align: left;
+  font-weight: 600;
+  color: var(--clr-thnks);
 }
